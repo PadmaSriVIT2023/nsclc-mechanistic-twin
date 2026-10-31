@@ -1,0 +1,88 @@
+{
+  "calibrated_m_log10_mu": -11.100000000000017,
+  "calibrated_sigma_log10_mu": 2.0,
+  "calibration_loss": 0.000611736391712058,
+  "tracerx_km_relapse_free_12_24": [
+    0.8344897951350383,
+    0.7095665935123947
+  ],
+  "model_relapse_free_12_24": [
+    0.8273684210526315,
+    0.7267368421052631
+  ],
+  "model_relapse_by_60_tracerx": 0.5663157894736842,
+  "relapse_envelope_60": [
+    0.3,
+    0.55
+  ],
+  "stage_median_volume_cm3_TRACERx": {
+    "1.0": 7.22,
+    "2.0": 38.5,
+    "3.0": 37.42,
+    "4.0": 37.42
+  },
+  "priors": {
+    "VDT_adeno_days": [
+      223.0,
+      0.3
+    ],
+    "VDT_squam_days": [
+      140.0,
+      0.3
+    ],
+    "log10_K": [
+      13.0,
+      0.25
+    ],
+    "log10_D": [
+      9.0,
+      0.25
+    ],
+    "V0_sdlog": 0.5
+  },
+  "n_draws": 400,
+  "P_relapse_by_24mo": {
+    "stage1_adeno": 0.135,
+    "stage1_squam": 0.212,
+    "stage2_adeno": 0.36,
+    "stage2_squam": 0.458,
+    "stage3_adeno": 0.35,
+    "stage3_squam": 0.455,
+    "stage4_adeno": 1.0,
+    "stage4_squam": 1.0
+  },
+  "P_relapse_by_60mo": {
+    "stage1_adeno": 0.465,
+    "stage1_squam": 0.62,
+    "stage2_adeno": 0.688,
+    "stage2_squam": 0.782,
+    "stage3_adeno": 0.688,
+    "stage3_squam": 0.782,
+    "stage4_adeno": 1.0,
+    "stage4_squam": 1.0
+  },
+  "P_no_relapse_20y": {
+    "stage1_adeno": 0.233,
+    "stage1_squam": 0.258,
+    "stage2_adeno": 0.13,
+    "stage2_squam": 0.155,
+    "stage3_adeno": 0.135,
+    "stage3_squam": 0.155,
+    "stage4_adeno": 0.0,
+    "stage4_squam": 0.0
+  },
+  "tcga_mech_only_cindex": 0.6097,
+  "oncosg_mech_only_cindex": 0.6701,
+  "nci_mech_only_cindex": 0.6516,
+  "tracerx_check": {
+    "n": 95,
+    "events": 24,
+    "cindex_twin_measured_volume": 0.7086,
+    "cindex_twin_95CI": [
+      0.594,
+      0.82
+    ],
+    "cindex_stage_alone": 0.7267,
+    "cindex_volume_alone": 0.7368
+  }
+}

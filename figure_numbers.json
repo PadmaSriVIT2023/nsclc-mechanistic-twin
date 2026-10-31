@@ -1,0 +1,166 @@
+{
+  "primary_learner": "CoxPH",
+  "calib_OncoSG_Clinical (as developed)_mean_abs_err": 0.17973396653573032,
+  "calib_OncoSG_Clinical (as developed)_mean_pred_vs_obs": [
+    0.44053659400378165,
+    0.2570823970222468
+  ],
+  "calib_OncoSG_Clinical + mechanistic (as developed)_mean_abs_err": 0.1777810918353971,
+  "calib_OncoSG_Clinical + mechanistic (as developed)_mean_pred_vs_obs": [
+    0.4450887034354244,
+    0.2570823970222468
+  ],
+  "calib_OncoSG_Clinical + mechanistic (baseline re-estimated)_mean_abs_err": 0.08643451956236559,
+  "calib_OncoSG_Clinical + mechanistic (baseline re-estimated)_mean_pred_vs_obs": [
+    0.2696614151614732,
+    0.2570823970222468
+  ],
+  "calib_NCI_SherlockLung_Clinical (as developed)_mean_abs_err": 0.22270639586762336,
+  "calib_NCI_SherlockLung_Clinical (as developed)_mean_pred_vs_obs": [
+    0.41330688328977444,
+    0.19487823320760056
+  ],
+  "calib_NCI_SherlockLung_Clinical + mechanistic (as developed)_mean_abs_err": 0.21944842929637148,
+  "calib_NCI_SherlockLung_Clinical + mechanistic (as developed)_mean_pred_vs_obs": [
+    0.4086796663686839,
+    0.19487823320760056
+  ],
+  "calib_NCI_SherlockLung_Clinical + mechanistic (baseline re-estimated)_mean_abs_err": 0.036125840518732424,
+  "calib_NCI_SherlockLung_Clinical + mechanistic (baseline re-estimated)_mean_pred_vs_obs": [
+    0.18995368044571384,
+    0.19487823320760056
+  ],
+  "dca_OncoSG_Stage only (TNM)_NB": {
+    "0.10": 0.1745359966913853,
+    "0.20": 0.12509810159209214,
+    "0.30": 0.0855889958100371,
+    "0.40": 0.04917417417417416
+  },
+  "dca_OncoSG_Clinical_NB": {
+    "0.10": 0.1745359966913853,
+    "0.20": 0.10908785533597497,
+    "0.30": 0.08332588157588466,
+    "0.40": 0.05706772113022109
+  },
+  "dca_OncoSG_Clinical + mechanistic_NB": {
+    "0.10": 0.1745359966913853,
+    "0.20": 0.1191649596870568,
+    "0.30": 0.08572827278857498,
+    "0.40": 0.07742149125870056
+  },
+  "dca_OncoSG_treat_all_NB": {
+    "0.10": 0.1745359966913853,
+    "0.20": 0.07135299627780847,
+    "0.30": -0.06131086139679032,
+    "0.40": -0.2381960049629221
+  },
+  "dca_NCI_SherlockLung_Stage only (TNM)_NB": {
+    "0.10": 0.10542025911955617,
+    "0.20": 0.0653086796168724,
+    "0.30": 0.006793438656833843,
+    "0.40": 0.0
+  },
+  "dca_NCI_SherlockLung_Clinical_NB": {
+    "0.10": 0.09908812566597887,
+    "0.20": 0.04904843565450026,
+    "0.30": -0.01114270345039576,
+    "0.40": 0.0
+  },
+  "dca_NCI_SherlockLung_Clinical + mechanistic_NB": {
+    "0.10": 0.10146323860502666,
+    "0.20": 0.05383997744025647,
+    "0.30": -0.00741446053946055,
+    "0.40": -0.007889546351084816
+  },
+  "dca_NCI_SherlockLung_treat_all_NB": {
+    "0.10": 0.10542025911955617,
+    "0.20": -0.0064022084904993,
+    "0.30": -0.15017395256057064,
+    "0.40": -0.34186961132066573
+  },
+  "risk_cutpoints_TCGA_tertiles": [
+    -0.21470210834621306,
+    0.21080072508463343
+  ],
+  "logrank_TCGA": {
+    "chi2": 57.379157688520834,
+    "p": 3.469558542424591e-13,
+    "n_per_group": [
+      315,
+      314,
+      316
+    ]
+  },
+  "logrank_OncoSG": {
+    "chi2": 30.19516933942708,
+    "p": 2.774612176581598e-07,
+    "n_per_group": [
+      125,
+      29,
+      142
+    ]
+  },
+  "logrank_NCI_SherlockLung": {
+    "chi2": 12.823784822419663,
+    "p": 0.0016419143830026719,
+    "n_per_group": [
+      95,
+      9,
+      65
+    ]
+  },
+  "lc_OncoSG_Mechanistic only": {
+    "50": 0.6156,
+    "100": 0.654,
+    "200": 0.6717,
+    "400": 0.6757,
+    "945": 0.6898
+  },
+  "lc_OncoSG_Clinical": {
+    "50": 0.5998,
+    "100": 0.627,
+    "200": 0.6691,
+    "400": 0.6972,
+    "945": 0.7097
+  },
+  "lc_OncoSG_Clinical + mechanistic": {
+    "50": 0.6204,
+    "100": 0.6388,
+    "200": 0.6722,
+    "400": 0.6983,
+    "945": 0.7101
+  },
+  "lc_NCI_SherlockLung_Mechanistic only": {
+    "50": 0.6213,
+    "100": 0.6524,
+    "200": 0.6536,
+    "400": 0.6531,
+    "945": 0.6554
+  },
+  "lc_NCI_SherlockLung_Clinical": {
+    "50": 0.6038,
+    "100": 0.63,
+    "200": 0.6421,
+    "400": 0.6548,
+    "945": 0.6617
+  },
+  "lc_NCI_SherlockLung_Clinical + mechanistic": {
+    "50": 0.6141,
+    "100": 0.6344,
+    "200": 0.6494,
+    "400": 0.6591,
+    "945": 0.6631
+  },
+  "shap_mean_abs": {
+    "ever_smoker": 0.0161,
+    "female": 0.0611,
+    "squamous": 0.0704,
+    "age": 0.1039,
+    "stage_III": 0.2182,
+    "stage_II": 0.2415,
+    "stage_IV": 0.4424,
+    "mech_P60": 0.7091,
+    "mech_logTstar": 1.0536
+  },
+  "shap_rank_stability_kendall_tau_mean": 0.9777777777777779
+}

@@ -1,0 +1,51 @@
+{
+  "sobol": {
+    "S1": {
+      "VDT (log days)": 0.054,
+      "log10 K": -0.003,
+      "log10 D": 0.012,
+      "log10 mu": 0.449,
+      "V0 (log cm3)": 0.294,
+      "seed quantile u": -0.006
+    },
+    "S1_conf": {
+      "VDT (log days)": 0.035,
+      "log10 K": 0.015,
+      "log10 D": 0.021,
+      "log10 mu": 0.087,
+      "V0 (log cm3)": 0.069,
+      "seed quantile u": 0.031
+    },
+    "ST": {
+      "VDT (log days)": 0.095,
+      "log10 K": 0.025,
+      "log10 D": 0.041,
+      "log10 mu": 0.643,
+      "V0 (log cm3)": 0.393,
+      "seed quantile u": 0.074
+    },
+    "ST_conf": {
+      "VDT (log days)": 0.017,
+      "log10 K": 0.013,
+      "log10 D": 0.018,
+      "log10 mu": 0.113,
+      "V0 (log cm3)": 0.091,
+      "seed quantile u": 0.024
+    }
+  },
+  "stage1_adeno": {
+    "P_relapse_free_24": 0.865,
+    "P_relapse_free_60": 0.5375,
+    "P_no_seeding": 0.2275
+  },
+  "stage2_adeno": {
+    "P_relapse_free_24": 0.6375,
+    "P_relapse_free_60": 0.3275,
+    "P_no_seeding": 0.12
+  },
+  "stage3_adeno": {
+    "P_relapse_free_24": 0.64,
+    "P_relapse_free_60": 0.3325,
+    "P_no_seeding": 0.12
+  }
+}

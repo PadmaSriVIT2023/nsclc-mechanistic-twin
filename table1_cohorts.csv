@@ -1,0 +1,13 @@
+,TCGA (development),OncoSG (external 1),NCI Sherlock-Lung (external 2)
+"Patients, n",945,296,169
+"Age, median (IQR)",67 (60-73),64 (57-70),68 (62-73)
+"Female, n (%)",384 (40.6),146 (49.3),137 (81.1)
+"Ever-smoker, n (%)",857 (90.7),109 (36.8),0 (0.0)
+"Squamous histology, n (%)",470 (49.7),0 (0.0),0 (0.0)
+"Stage I, n (%)",498 (52.7),136 (45.9),101 (59.8)
+"Stage II, n (%)",261 (27.6),54 (18.2),35 (20.7)
+"Stage III, n (%)",154 (16.3),87 (29.4),33 (19.5)
+"Stage IV, n (%)",32 (3.4),19 (6.4),0 (0.0)
+"Deaths within 60 mo, n",337,88,42
+"Median follow-up, mo (reverse KM)",30.8,53.0,60.0
+"3-year OS, % (KM)",59.5,74.3,80.5

@@ -1,0 +1,552 @@
+{
+ "A_hr": [
+  {
+   "feature": "age",
+   "HR": 1.0136,
+   "lo": 1.0016,
+   "hi": 1.0258,
+   "p": 0.0263,
+   "ph_rho": -0.0412,
+   "ph_p": 0.4505
+  },
+  {
+   "feature": "female",
+   "HR": 0.8724,
+   "lo": 0.6892,
+   "hi": 1.1042,
+   "p": 0.2562,
+   "ph_rho": 0.1082,
+   "ph_p": 0.0473
+  },
+  {
+   "feature": "stage_II",
+   "HR": 1.6458,
+   "lo": 1.2671,
+   "hi": 2.1377,
+   "p": 0.0002,
+   "ph_rho": -0.0277,
+   "ph_p": 0.612
+  },
+  {
+   "feature": "stage_III",
+   "HR": 2.3318,
+   "lo": 1.7656,
+   "hi": 3.0795,
+   "p": 0.0,
+   "ph_rho": -0.0911,
+   "ph_p": 0.0952
+  },
+  {
+   "feature": "stage_IV",
+   "HR": 3.1249,
+   "lo": 1.9291,
+   "hi": 5.0621,
+   "p": 0.0,
+   "ph_rho": 0.0634,
+   "ph_p": 0.2456
+  },
+  {
+   "feature": "ever_smoker",
+   "HR": 0.8538,
+   "lo": 0.5775,
+   "hi": 1.2624,
+   "p": 0.4283,
+   "ph_rho": -0.0618,
+   "ph_p": 0.258
+  },
+  {
+   "feature": "squamous",
+   "HR": 1.0216,
+   "lo": 0.808,
+   "hi": 1.2917,
+   "p": 0.8583,
+   "ph_rho": -0.1999,
+   "ph_p": 0.0002
+  }
+ ],
+ "F_samplesize": {
+  "LR_chi2_clinical": 52.495596646339436,
+  "R2_CS_clinical": 0.05403612325853102,
+  "clinical_7": {
+   "parameters": 7,
+   "n_required_shrinkage_0.9": 1130.5255817619711,
+   "n_available": 945,
+   "events": 337,
+   "EPP": 48.142857142857146,
+   "expected_shrinkage_vanHouwelingen": 0.8666554826082138
+  },
+  "clinical_twin_9": {
+   "parameters": 9,
+   "n_required_shrinkage_0.9": 1453.5328908368201,
+   "n_available": 945,
+   "events": 337,
+   "EPP": 37.44444444444444,
+   "expected_shrinkage_vanHouwelingen": 0.8285570490677034
+  }
+ },
+ "B_cal": [
+  {
+   "cohort": "OncoSG",
+   "slope": 1.3624928236688554,
+   "slope_lo": 0.9138851481698618,
+   "slope_hi": 1.811100499167849,
+   "observed_36": 0.2570823970222468,
+   "expected_36": 0.4450887034354244,
+   "OE": 0.577598117044877
+  },
+  {
+   "cohort": "NCI_SherlockLung",
+   "slope": 1.0950459598095241,
+   "slope_lo": 0.4878858852813067,
+   "slope_hi": 1.7022060343377414,
+   "observed_36": 0.19487823320760056,
+   "expected_36": 0.4086796663686839,
+   "OE": 0.4768483710951115
+  }
+ ],
+ "C_sub": [
+  {
+   "cohort": "OncoSG",
+   "subgroup": "All",
+   "n": 296,
+   "events": 88,
+   "C": 0.707345971563981,
+   "lo": 0.6500078883567475,
+   "hi": 0.7633969565774809
+  },
+  {
+   "cohort": "OncoSG",
+   "subgroup": "Stage I",
+   "n": 136,
+   "events": 25,
+   "C": 0.542415378186377,
+   "lo": 0.43552948868742675,
+   "hi": 0.6319402131649372
+  },
+  {
+   "cohort": "OncoSG",
+   "subgroup": "Stage II-IV",
+   "n": 160,
+   "events": 63,
+   "C": 0.6824516946468167,
+   "lo": 0.6194144908627973,
+   "hi": 0.750855284444619
+  },
+  {
+   "cohort": "OncoSG",
+   "subgroup": "Female",
+   "n": 146,
+   "events": 32,
+   "C": 0.705248786407767,
+   "lo": 0.6138857738951081,
+   "hi": 0.7928931397532188
+  },
+  {
+   "cohort": "OncoSG",
+   "subgroup": "Male",
+   "n": 150,
+   "events": 56,
+   "C": 0.6923288172830465,
+   "lo": 0.6247492058069651,
+   "hi": 0.7661572184612053
+  },
+  {
+   "cohort": "OncoSG",
+   "subgroup": "Ever-smoker",
+   "n": 109,
+   "events": 40,
+   "C": 0.7455130375888926,
+   "lo": 0.6614848711615943,
+   "hi": 0.8236204995438182
+  },
+  {
+   "cohort": "OncoSG",
+   "subgroup": "Never-smoker",
+   "n": 187,
+   "events": 48,
+   "C": 0.6911498601743707,
+   "lo": 0.6134532801002314,
+   "hi": 0.7659347456647037
+  },
+  {
+   "cohort": "NCI_SherlockLung",
+   "subgroup": "All",
+   "n": 169,
+   "events": 42,
+   "C": 0.6629305074383534,
+   "lo": 0.5850388448984397,
+   "hi": 0.7411613997806417
+  },
+  {
+   "cohort": "NCI_SherlockLung",
+   "subgroup": "Stage I",
+   "n": 101,
+   "events": 14,
+   "C": 0.5853535353535354,
+   "lo": 0.43837384883860375,
+   "hi": 0.7280875081063554
+  },
+  {
+   "cohort": "NCI_SherlockLung",
+   "subgroup": "Stage II-IV",
+   "n": 68,
+   "events": 28,
+   "C": 0.47689243027888445,
+   "lo": 0.36875840019400796,
+   "hi": 0.5917620636499055
+  },
+  {
+   "cohort": "NCI_SherlockLung",
+   "subgroup": "Female",
+   "n": 137,
+   "events": 31,
+   "C": 0.6944730518365946,
+   "lo": 0.5966529913711157,
+   "hi": 0.7886644073846814
+  },
+  {
+   "cohort": "NCI_SherlockLung",
+   "subgroup": "Male",
+   "n": 32,
+   "events": 11,
+   "C": 0.4831932773109244,
+   "lo": 0.3347734729934376,
+   "hi": 0.670441957654641
+  }
+ ],
+ "D_sigma0_calibration": {
+  "m": -11.000000000000018,
+  "loss": 0.03171215620872955,
+  "S12": 0.9217894736842105,
+  "S24": 0.8277368421052631,
+  "R60": 0.6506315789473684,
+  "primary_loss": 0.000611736391712058
+ },
+ "D_sens": [
+  {
+   "analysis": "Primary analysis",
+   "features": "Twin only",
+   "cohort": "OncoSG",
+   "C": 0.6898,
+   "IBS": 0.1857
+  },
+  {
+   "analysis": "Primary analysis",
+   "features": "Twin only",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6554,
+   "IBS": 0.1757
+  },
+  {
+   "analysis": "Primary analysis",
+   "features": "Clinical + twin",
+   "cohort": "OncoSG",
+   "C": 0.7073,
+   "IBS": 0.208
+  },
+  {
+   "analysis": "Primary analysis",
+   "features": "Clinical + twin",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6629,
+   "IBS": 0.2165
+  },
+  {
+   "analysis": "Primary analysis",
+   "features": "Clinical",
+   "cohort": "OncoSG",
+   "C": 0.7097,
+   "IBS": 0.2047
+  },
+  {
+   "analysis": "Primary analysis",
+   "features": "Clinical",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6617,
+   "IBS": 0.2165
+  },
+  {
+   "analysis": "Homogeneous seeding (sigma = 0)",
+   "features": "Twin only",
+   "cohort": "OncoSG",
+   "C": 0.6504,
+   "IBS": 0.1857
+  },
+  {
+   "analysis": "Homogeneous seeding (sigma = 0)",
+   "features": "Twin only",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6479,
+   "IBS": 0.1744
+  },
+  {
+   "analysis": "Homogeneous seeding (sigma = 0)",
+   "features": "Clinical + twin",
+   "cohort": "OncoSG",
+   "C": 0.7066,
+   "IBS": 0.2085
+  },
+  {
+   "analysis": "Homogeneous seeding (sigma = 0)",
+   "features": "Clinical + twin",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6635,
+   "IBS": 0.2163
+  },
+  {
+   "analysis": "Homogeneous seeding (sigma = 0)",
+   "features": "Clinical",
+   "cohort": "OncoSG",
+   "C": 0.7097,
+   "IBS": 0.2047
+  },
+  {
+   "analysis": "Homogeneous seeding (sigma = 0)",
+   "features": "Clinical",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6617,
+   "IBS": 0.2165
+  },
+  {
+   "analysis": "VDT prior x0.7 (no recalibration)",
+   "features": "Twin only",
+   "cohort": "OncoSG",
+   "C": 0.6504,
+   "IBS": 0.1902
+  },
+  {
+   "analysis": "VDT prior x0.7 (no recalibration)",
+   "features": "Twin only",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6479,
+   "IBS": 0.1801
+  },
+  {
+   "analysis": "VDT prior x0.7 (no recalibration)",
+   "features": "Clinical + twin",
+   "cohort": "OncoSG",
+   "C": 0.7089,
+   "IBS": 0.207
+  },
+  {
+   "analysis": "VDT prior x0.7 (no recalibration)",
+   "features": "Clinical + twin",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6635,
+   "IBS": 0.2158
+  },
+  {
+   "analysis": "VDT prior x0.7 (no recalibration)",
+   "features": "Clinical",
+   "cohort": "OncoSG",
+   "C": 0.7097,
+   "IBS": 0.2047
+  },
+  {
+   "analysis": "VDT prior x0.7 (no recalibration)",
+   "features": "Clinical",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6617,
+   "IBS": 0.2165
+  },
+  {
+   "analysis": "VDT prior x1.3 (no recalibration)",
+   "features": "Twin only",
+   "cohort": "OncoSG",
+   "C": 0.6504,
+   "IBS": 0.1847
+  },
+  {
+   "analysis": "VDT prior x1.3 (no recalibration)",
+   "features": "Twin only",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6479,
+   "IBS": 0.1758
+  },
+  {
+   "analysis": "VDT prior x1.3 (no recalibration)",
+   "features": "Clinical + twin",
+   "cohort": "OncoSG",
+   "C": 0.7101,
+   "IBS": 0.2059
+  },
+  {
+   "analysis": "VDT prior x1.3 (no recalibration)",
+   "features": "Clinical + twin",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6637,
+   "IBS": 0.2153
+  },
+  {
+   "analysis": "VDT prior x1.3 (no recalibration)",
+   "features": "Clinical",
+   "cohort": "OncoSG",
+   "C": 0.7097,
+   "IBS": 0.2047
+  },
+  {
+   "analysis": "VDT prior x1.3 (no recalibration)",
+   "features": "Clinical",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6617,
+   "IBS": 0.2165
+  },
+  {
+   "analysis": "36-month horizon",
+   "features": "Twin only",
+   "cohort": "OncoSG",
+   "C": 0.7098,
+   "IBS": 0.1229
+  },
+  {
+   "analysis": "36-month horizon",
+   "features": "Twin only",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6592,
+   "IBS": 0.0998
+  },
+  {
+   "analysis": "36-month horizon",
+   "features": "Clinical + twin",
+   "cohort": "OncoSG",
+   "C": 0.726,
+   "IBS": 0.1325
+  },
+  {
+   "analysis": "36-month horizon",
+   "features": "Clinical + twin",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6575,
+   "IBS": 0.1197
+  },
+  {
+   "analysis": "36-month horizon",
+   "features": "Clinical",
+   "cohort": "OncoSG",
+   "C": 0.7309,
+   "IBS": 0.1296
+  },
+  {
+   "analysis": "36-month horizon",
+   "features": "Clinical",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6572,
+   "IBS": 0.1171
+  },
+  {
+   "analysis": "Stage IV excluded",
+   "features": "Twin only",
+   "cohort": "OncoSG",
+   "C": 0.6429,
+   "IBS": 0.1904
+  },
+  {
+   "analysis": "Stage IV excluded",
+   "features": "Twin only",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6554,
+   "IBS": 0.1825
+  },
+  {
+   "analysis": "Stage IV excluded",
+   "features": "Clinical + twin",
+   "cohort": "OncoSG",
+   "C": 0.6744,
+   "IBS": 0.2027
+  },
+  {
+   "analysis": "Stage IV excluded",
+   "features": "Clinical + twin",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.665,
+   "IBS": 0.2136
+  },
+  {
+   "analysis": "Stage IV excluded",
+   "features": "Clinical",
+   "cohort": "OncoSG",
+   "C": 0.6717,
+   "IBS": 0.1997
+  },
+  {
+   "analysis": "Stage IV excluded",
+   "features": "Clinical",
+   "cohort": "NCI_SherlockLung",
+   "C": 0.6587,
+   "IBS": 0.2145
+  }
+ ],
+ "E_dfs": [
+  {
+   "stage": 1,
+   "histology": "Adenocarcinoma",
+   "n": 238,
+   "events": 82,
+   "KM_DFS_24": 0.7002,
+   "twin_RFS_24": 0.865,
+   "KM_DFS_60": 0.4636,
+   "twin_RFS_60": 0.535
+  },
+  {
+   "stage": 1,
+   "histology": "Squamous",
+   "n": 169,
+   "events": 47,
+   "KM_DFS_24": 0.7933,
+   "twin_RFS_24": 0.7875,
+   "KM_DFS_60": 0.5678,
+   "twin_RFS_60": 0.38
+  },
+  {
+   "stage": 2,
+   "histology": "Adenocarcinoma",
+   "n": 98,
+   "events": 52,
+   "KM_DFS_24": 0.4407,
+   "twin_RFS_24": 0.64,
+   "KM_DFS_60": 0.2784,
+   "twin_RFS_60": 0.3125
+  },
+  {
+   "stage": 2,
+   "histology": "Squamous",
+   "n": 116,
+   "events": 41,
+   "KM_DFS_24": 0.6322,
+   "twin_RFS_24": 0.5425,
+   "KM_DFS_60": 0.4944,
+   "twin_RFS_60": 0.2175
+  },
+  {
+   "stage": 3,
+   "histology": "Adenocarcinoma",
+   "n": 55,
+   "events": 27,
+   "KM_DFS_24": 0.502,
+   "twin_RFS_24": 0.65,
+   "KM_DFS_60": 0.3707,
+   "twin_RFS_60": 0.3125
+  },
+  {
+   "stage": 3,
+   "histology": "Squamous",
+   "n": 62,
+   "events": 32,
+   "KM_DFS_24": 0.526,
+   "twin_RFS_24": 0.545,
+   "KM_DFS_60": 0.3747,
+   "twin_RFS_60": 0.2175
+  }
+ ],
+ "E_dfs_mean_abs_diff_24": 0.10442202663059413,
+ "E_dfs_mean_abs_diff_60": 0.1309288017245013,
+ "E_dfs_cindex_twin": 0.5727307990690458,
+ "E_dfs_cindex_stage": 0.6059508550612204,
+ "E_dfs_n": 738,
+ "E_dfs_events": 281,
+ "H_cure_stageI_adeno": {
+  "analytic_mean_exp": 0.2313354051409288,
+  "simulated_n0": 0.2325,
+  "median_Lambda_per_mu": 2562054612256.373
+ }
+}

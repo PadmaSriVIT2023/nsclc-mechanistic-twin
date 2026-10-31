@@ -1,0 +1,727 @@
+n,rep,features,cohort,c
+50,0,Clinical,OncoSG,0.7171631685849695
+50,0,Clinical,NCI_SherlockLung,0.6227837782759323
+50,0,Clinical + mechanistic,OncoSG,0.7167118032046942
+50,0,Clinical + mechanistic,NCI_SherlockLung,0.6307316079070715
+50,0,Mechanistic only,OncoSG,0.6504457233130219
+50,0,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,1,Clinical,OncoSG,0.6627172195892576
+50,1,Clinical,NCI_SherlockLung,0.6769920521703688
+50,1,Clinical + mechanistic,OncoSG,0.6661024599413226
+50,1,Clinical + mechanistic,NCI_SherlockLung,0.677399633177094
+50,1,Mechanistic only,OncoSG,0.6227995937711578
+50,1,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,2,Clinical,OncoSG,0.67795080117355
+50,2,Clinical,NCI_SherlockLung,0.6488689627063379
+50,2,Clinical + mechanistic,OncoSG,0.6886143082825548
+50,2,Clinical + mechanistic,NCI_SherlockLung,0.6494803342164255
+50,2,Mechanistic only,OncoSG,0.6897709320695102
+50,2,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,3,Clinical,OncoSG,0.6632814263146016
+50,3,Clinical,NCI_SherlockLung,0.6765844711636437
+50,3,Clinical + mechanistic,OncoSG,0.6659331979237193
+50,3,Clinical + mechanistic,NCI_SherlockLung,0.6767882616670063
+50,3,Mechanistic only,OncoSG,0.6897709320695102
+50,3,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,4,Clinical,OncoSG,0.5431618144888287
+50,4,Clinical,NCI_SherlockLung,0.6623191359282657
+50,4,Clinical + mechanistic,OncoSG,0.5999774317309863
+50,4,Clinical + mechanistic,NCI_SherlockLung,0.6623191359282657
+50,4,Mechanistic only,OncoSG,0.6227995937711578
+50,4,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,5,Clinical,OncoSG,0.6868088467614534
+50,5,Clinical,NCI_SherlockLung,0.6325657224373344
+50,5,Clinical + mechanistic,OncoSG,0.6913225005642067
+50,5,Clinical + mechanistic,NCI_SherlockLung,0.6337884654575097
+50,5,Mechanistic only,OncoSG,0.6504457233130219
+50,5,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,6,Clinical,OncoSG,0.5941661024599413
+50,6,Clinical,NCI_SherlockLung,0.6700631750560424
+50,6,Clinical + mechanistic,OncoSG,0.6604603926878808
+50,6,Clinical + mechanistic,NCI_SherlockLung,0.67067454656613
+50,6,Mechanistic only,OncoSG,0.6227995937711578
+50,6,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,7,Clinical,OncoSG,0.5577747686752426
+50,7,Clinical,NCI_SherlockLung,0.5481964540452415
+50,7,Clinical + mechanistic,OncoSG,0.5563078311893478
+50,7,Clinical + mechanistic,NCI_SherlockLung,0.5461585490116161
+50,7,Mechanistic only,OncoSG,0.3495542766869781
+50,7,Mechanistic only,NCI_SherlockLung,0.35214998981047485
+50,8,Clinical,OncoSG,0.5890036109230422
+50,8,Clinical,NCI_SherlockLung,0.6403097615651111
+50,8,Clinical + mechanistic,OncoSG,0.6964567817648386
+50,8,Clinical + mechanistic,NCI_SherlockLung,0.6486651722029754
+50,8,Mechanistic only,OncoSG,0.5335420898217107
+50,8,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,9,Clinical,OncoSG,0.5733186639584744
+50,9,Clinical,NCI_SherlockLung,0.5856939066639495
+50,9,Clinical + mechanistic,OncoSG,0.6440419769803656
+50,9,Clinical + mechanistic,NCI_SherlockLung,0.5856939066639495
+50,9,Mechanistic only,OncoSG,0.6504457233130219
+50,9,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,10,Clinical,OncoSG,0.5061498533062514
+50,10,Clinical,NCI_SherlockLung,0.33768086407173425
+50,10,Clinical + mechanistic,OncoSG,0.4921575265177161
+50,10,Clinical + mechanistic,NCI_SherlockLung,0.40065212961076013
+50,10,Mechanistic only,OncoSG,0.6504457233130219
+50,10,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,11,Clinical,OncoSG,0.5428232904536222
+50,11,Clinical,NCI_SherlockLung,0.5367841858569391
+50,11,Clinical + mechanistic,OncoSG,0.6276799819453848
+50,11,Clinical + mechanistic,NCI_SherlockLung,0.5846749541471368
+50,11,Mechanistic only,OncoSG,0.6504457233130219
+50,11,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,12,Clinical,OncoSG,0.6284698713608666
+50,12,Clinical,NCI_SherlockLung,0.5031587528021194
+50,12,Clinical + mechanistic,OncoSG,0.6308395396073121
+50,12,Clinical + mechanistic,NCI_SherlockLung,0.5113103729366212
+50,12,Mechanistic only,OncoSG,0.4664579101782893
+50,12,Mechanistic only,NCI_SherlockLung,0.34460974118606075
+50,13,Clinical,OncoSG,0.6110923042202663
+50,13,Clinical,NCI_SherlockLung,0.6407173425718361
+50,13,Clinical + mechanistic,OncoSG,0.6162265854208983
+50,13,Clinical + mechanistic,NCI_SherlockLung,0.6437742001222743
+50,13,Mechanistic only,OncoSG,0.6504457233130219
+50,13,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,14,Clinical,OncoSG,0.5045136538027534
+50,14,Clinical,NCI_SherlockLung,0.48542897900957815
+50,14,Clinical + mechanistic,OncoSG,0.5125253893026405
+50,14,Clinical + mechanistic,NCI_SherlockLung,0.5113103729366212
+50,14,Mechanistic only,OncoSG,0.6504457233130219
+50,14,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,15,Clinical,OncoSG,0.5107199277815392
+50,15,Clinical,NCI_SherlockLung,0.5239453841450988
+50,15,Clinical + mechanistic,OncoSG,0.5165876777251185
+50,15,Clinical + mechanistic,NCI_SherlockLung,0.5426941104544528
+50,15,Mechanistic only,OncoSG,0.5335420898217107
+50,15,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,16,Clinical,OncoSG,0.6839313924621981
+50,16,Clinical,NCI_SherlockLung,0.5255757081719992
+50,16,Clinical + mechanistic,OncoSG,0.6859625366734371
+50,16,Clinical + mechanistic,NCI_SherlockLung,0.5396372529040147
+50,16,Mechanistic only,OncoSG,0.4664579101782893
+50,16,Mechanistic only,NCI_SherlockLung,0.34460974118606075
+50,17,Clinical,OncoSG,0.6514895057549086
+50,17,Clinical,NCI_SherlockLung,0.5687792948848583
+50,17,Clinical + mechanistic,OncoSG,0.6570187316632814
+50,17,Clinical + mechanistic,NCI_SherlockLung,0.579172610556348
+50,17,Mechanistic only,OncoSG,0.6504457233130219
+50,17,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,18,Clinical,OncoSG,0.6582599864590386
+50,18,Clinical,NCI_SherlockLung,0.6034236804564908
+50,18,Clinical + mechanistic,OncoSG,0.6570187316632814
+50,18,Clinical + mechanistic,NCI_SherlockLung,0.6484613816996128
+50,18,Mechanistic only,OncoSG,0.6504457233130219
+50,18,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,19,Clinical,OncoSG,0.6192168810652223
+50,19,Clinical,NCI_SherlockLung,0.6111677195842674
+50,19,Clinical + mechanistic,OncoSG,0.6234484315053035
+50,19,Clinical + mechanistic,NCI_SherlockLung,0.6193193397187691
+50,19,Mechanistic only,OncoSG,0.6504457233130219
+50,19,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,20,Clinical,OncoSG,0.5472805235838412
+50,20,Clinical,NCI_SherlockLung,0.6476462196861626
+50,20,Clinical + mechanistic,OncoSG,0.5522455427668698
+50,20,Clinical + mechanistic,NCI_SherlockLung,0.6484613816996128
+50,20,Mechanistic only,OncoSG,0.6504457233130219
+50,20,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,21,Clinical,OncoSG,0.5447980139923267
+50,21,Clinical,NCI_SherlockLung,0.6254330548196454
+50,21,Clinical + mechanistic,OncoSG,0.5460956894606184
+50,21,Clinical + mechanistic,NCI_SherlockLung,0.627878540859996
+50,21,Mechanistic only,OncoSG,0.5335420898217107
+50,21,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,22,Clinical,OncoSG,0.6926765967050327
+50,22,Clinical,NCI_SherlockLung,0.5445282249847158
+50,22,Clinical + mechanistic,OncoSG,0.693127962085308
+50,22,Clinical + mechanistic,NCI_SherlockLung,0.5526798451192174
+50,22,Mechanistic only,OncoSG,0.6897709320695102
+50,22,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,23,Clinical,OncoSG,0.5275332881967953
+50,23,Clinical,NCI_SherlockLung,0.6769920521703688
+50,23,Clinical + mechanistic,OncoSG,0.5421462423832092
+50,23,Clinical + mechanistic,NCI_SherlockLung,0.6776034236804565
+50,23,Mechanistic only,OncoSG,0.6548465357707064
+50,23,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,24,Clinical,OncoSG,0.667795080117355
+50,24,Clinical,NCI_SherlockLung,0.6555940493173018
+50,24,Clinical + mechanistic,OncoSG,0.6765402843601895
+50,24,Clinical + mechanistic,NCI_SherlockLung,0.663134297941716
+50,24,Mechanistic only,OncoSG,0.6504457233130219
+50,24,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,25,Clinical,OncoSG,0.5447980139923267
+50,25,Clinical,NCI_SherlockLung,0.6663949459955166
+50,25,Clinical + mechanistic,OncoSG,0.6290340780862108
+50,25,Clinical + mechanistic,NCI_SherlockLung,0.6643570409618912
+50,25,Mechanistic only,OncoSG,0.6897709320695102
+50,25,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,26,Clinical,OncoSG,0.6342812006319115
+50,26,Clinical,NCI_SherlockLung,0.6323619319339718
+50,26,Clinical + mechanistic,OncoSG,0.6387384337621305
+50,26,Clinical + mechanistic,NCI_SherlockLung,0.6502954962298757
+50,26,Mechanistic only,OncoSG,0.6897709320695102
+50,26,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,27,Clinical,OncoSG,0.5309749492213948
+50,27,Clinical,NCI_SherlockLung,0.6560016303240269
+50,27,Clinical + mechanistic,OncoSG,0.5312006319115324
+50,27,Clinical + mechanistic,NCI_SherlockLung,0.6566130018341145
+50,27,Mechanistic only,OncoSG,0.6227995937711578
+50,27,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+50,28,Clinical,OncoSG,0.5252764612954186
+50,28,Clinical,NCI_SherlockLung,0.6684328510291421
+50,28,Clinical + mechanistic,OncoSG,0.5374069058903183
+50,28,Clinical + mechanistic,NCI_SherlockLung,0.6737314041165682
+50,28,Mechanistic only,OncoSG,0.6504457233130219
+50,28,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+50,29,Clinical,OncoSG,0.5963382983525164
+50,29,Clinical,NCI_SherlockLung,0.6390870185449358
+50,29,Clinical + mechanistic,OncoSG,0.6598397652900022
+50,29,Clinical + mechanistic,NCI_SherlockLung,0.6462196861626248
+50,29,Mechanistic only,OncoSG,0.5335420898217107
+50,29,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,0,Clinical,OncoSG,0.5591288648160686
+100,0,Clinical,NCI_SherlockLung,0.6504992867332382
+100,0,Clinical + mechanistic,OncoSG,0.5459828481155495
+100,0,Clinical + mechanistic,NCI_SherlockLung,0.6329733034440596
+100,0,Mechanistic only,OncoSG,0.6504457233130219
+100,0,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,1,Clinical,OncoSG,0.5859286842699165
+100,1,Clinical,NCI_SherlockLung,0.6639494599551661
+100,1,Clinical + mechanistic,OncoSG,0.5952945159106297
+100,1,Clinical + mechanistic,NCI_SherlockLung,0.6627267169349909
+100,1,Mechanistic only,OncoSG,0.6227995937711578
+100,1,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,2,Clinical,OncoSG,0.6915481832543444
+100,2,Clinical,NCI_SherlockLung,0.672916242103118
+100,2,Clinical + mechanistic,OncoSG,0.6930715414127736
+100,2,Clinical + mechanistic,NCI_SherlockLung,0.6716934990829427
+100,2,Mechanistic only,OncoSG,0.6897709320695102
+100,2,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,3,Clinical,OncoSG,0.6698826450011284
+100,3,Clinical,NCI_SherlockLung,0.6070919095170165
+100,3,Clinical + mechanistic,OncoSG,0.6719702098849019
+100,3,Clinical + mechanistic,NCI_SherlockLung,0.6083146525371917
+100,3,Mechanistic only,OncoSG,0.6897709320695102
+100,3,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,4,Clinical,OncoSG,0.6429135635296773
+100,4,Clinical,NCI_SherlockLung,0.6378642755247605
+100,4,Clinical + mechanistic,OncoSG,0.6416158880613857
+100,4,Clinical + mechanistic,NCI_SherlockLung,0.6374566945180354
+100,4,Mechanistic only,OncoSG,0.6897709320695102
+100,4,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,5,Clinical,OncoSG,0.5372094335364478
+100,5,Clinical,NCI_SherlockLung,0.6623191359282657
+100,5,Clinical + mechanistic,OncoSG,0.608609794628752
+100,5,Clinical + mechanistic,NCI_SherlockLung,0.6615039739148155
+100,5,Mechanistic only,OncoSG,0.5335420898217107
+100,5,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,6,Clinical,OncoSG,0.6651997291807719
+100,6,Clinical,NCI_SherlockLung,0.6396983900550235
+100,6,Clinical + mechanistic,OncoSG,0.6657075152335816
+100,6,Clinical + mechanistic,NCI_SherlockLung,0.6423476665987365
+100,6,Mechanistic only,OncoSG,0.6897709320695102
+100,6,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,7,Clinical,OncoSG,0.5814714511396976
+100,7,Clinical,NCI_SherlockLung,0.5991440798858774
+100,7,Clinical + mechanistic,OncoSG,0.6029113067027759
+100,7,Clinical + mechanistic,NCI_SherlockLung,0.6146321581414306
+100,7,Mechanistic only,OncoSG,0.5335420898217107
+100,7,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,8,Clinical,OncoSG,0.6622094335364478
+100,8,Clinical,NCI_SherlockLung,0.6028123089464031
+100,8,Clinical + mechanistic,OncoSG,0.6698826450011284
+100,8,Clinical + mechanistic,NCI_SherlockLung,0.6174852251885062
+100,8,Mechanistic only,OncoSG,0.6504457233130219
+100,8,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,9,Clinical,OncoSG,0.6127285037237644
+100,9,Clinical,NCI_SherlockLung,0.6543713062971266
+100,9,Clinical + mechanistic,OncoSG,0.6155495373504852
+100,9,Clinical + mechanistic,NCI_SherlockLung,0.6535561442836764
+100,9,Mechanistic only,OncoSG,0.6897709320695102
+100,9,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,10,Clinical,OncoSG,0.5024542992552471
+100,10,Clinical,NCI_SherlockLung,0.6374566945180354
+100,10,Clinical + mechanistic,OncoSG,0.6270593545475062
+100,10,Clinical + mechanistic,NCI_SherlockLung,0.6382718565314857
+100,10,Mechanistic only,OncoSG,0.6504457233130219
+100,10,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,11,Clinical,OncoSG,0.6231099074700971
+100,11,Clinical,NCI_SherlockLung,0.642551457102099
+100,11,Clinical + mechanistic,OncoSG,0.6422929361317987
+100,11,Clinical + mechanistic,NCI_SherlockLung,0.644385571632362
+100,11,Mechanistic only,OncoSG,0.6504457233130219
+100,11,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,12,Clinical,OncoSG,0.6897991424057774
+100,12,Clinical,NCI_SherlockLung,0.6580395353576524
+100,12,Clinical + mechanistic,OncoSG,0.6861882193635748
+100,12,Clinical + mechanistic,NCI_SherlockLung,0.6608926024047279
+100,12,Mechanistic only,OncoSG,0.6897709320695102
+100,12,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,13,Clinical,OncoSG,0.6198939291356353
+100,13,Clinical,NCI_SherlockLung,0.6244141023028327
+100,13,Clinical + mechanistic,OncoSG,0.6354660347551343
+100,13,Clinical + mechanistic,NCI_SherlockLung,0.6421438760953739
+100,13,Mechanistic only,OncoSG,0.6897709320695102
+100,13,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,14,Clinical,OncoSG,0.6416723087339201
+100,14,Clinical,NCI_SherlockLung,0.6780110046871816
+100,14,Clinical + mechanistic,OncoSG,0.6432520875648837
+100,14,Clinical + mechanistic,NCI_SherlockLung,0.6776034236804565
+100,14,Mechanistic only,OncoSG,0.6897709320695102
+100,14,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,15,Clinical,OncoSG,0.525332881967953
+100,15,Clinical,NCI_SherlockLung,0.6009781944161402
+100,15,Clinical + mechanistic,OncoSG,0.5300157977883097
+100,15,Clinical + mechanistic,NCI_SherlockLung,0.6007744039127777
+100,15,Mechanistic only,OncoSG,0.6504457233130219
+100,15,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,16,Clinical,OncoSG,0.6318551117129316
+100,16,Clinical,NCI_SherlockLung,0.52965151823925
+100,16,Clinical + mechanistic,OncoSG,0.6375535996389077
+100,16,Clinical + mechanistic,NCI_SherlockLung,0.5384145098838394
+100,16,Mechanistic only,OncoSG,0.6504457233130219
+100,16,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,17,Clinical,OncoSG,0.6367637102234258
+100,17,Clinical,NCI_SherlockLung,0.6641532504585287
+100,17,Clinical + mechanistic,OncoSG,0.6365380275332881
+100,17,Clinical + mechanistic,NCI_SherlockLung,0.6643570409618912
+100,17,Mechanistic only,OncoSG,0.6504457233130219
+100,17,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,18,Clinical,OncoSG,0.708417964342135
+100,18,Clinical,NCI_SherlockLung,0.663541878948441
+100,18,Clinical + mechanistic,OncoSG,0.7095463777928233
+100,18,Clinical + mechanistic,NCI_SherlockLung,0.6653759934787039
+100,18,Mechanistic only,OncoSG,0.6504457233130219
+100,18,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,19,Clinical,OncoSG,0.6056759196569623
+100,19,Clinical,NCI_SherlockLung,0.6052577949867536
+100,19,Clinical + mechanistic,OncoSG,0.6393026404874746
+100,19,Clinical + mechanistic,NCI_SherlockLung,0.6270633788465457
+100,19,Mechanistic only,OncoSG,0.6897709320695102
+100,19,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,20,Clinical,OncoSG,0.6236741141954412
+100,20,Clinical,NCI_SherlockLung,0.6641532504585287
+100,20,Clinical + mechanistic,OncoSG,0.6328142631460167
+100,20,Clinical + mechanistic,NCI_SherlockLung,0.6645608314652537
+100,20,Mechanistic only,OncoSG,0.6227995937711578
+100,20,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,21,Clinical,OncoSG,0.5232453170841797
+100,21,Clinical,NCI_SherlockLung,0.5033625433054819
+100,21,Clinical + mechanistic,OncoSG,0.5360528097494922
+100,21,Clinical + mechanistic,NCI_SherlockLung,0.5304666802527003
+100,21,Mechanistic only,OncoSG,0.6897709320695102
+100,21,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,22,Clinical,OncoSG,0.660347551342812
+100,22,Clinical,NCI_SherlockLung,0.6619115549215406
+100,22,Clinical + mechanistic,OncoSG,0.6600654479801399
+100,22,Clinical + mechanistic,NCI_SherlockLung,0.661300183411453
+100,22,Mechanistic only,OncoSG,0.6504457233130219
+100,22,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,23,Clinical,OncoSG,0.6932972241029113
+100,23,Clinical,NCI_SherlockLung,0.6187079682086815
+100,23,Clinical + mechanistic,OncoSG,0.6972466711803205
+100,23,Clinical + mechanistic,NCI_SherlockLung,0.6315467699205217
+100,23,Mechanistic only,OncoSG,0.6897709320695102
+100,23,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,24,Clinical,OncoSG,0.7077973369442564
+100,24,Clinical,NCI_SherlockLung,0.6617077644181781
+100,24,Clinical + mechanistic,OncoSG,0.7089821710674791
+100,24,Clinical + mechanistic,NCI_SherlockLung,0.6633380884450785
+100,24,Mechanistic only,OncoSG,0.6504457233130219
+100,24,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,25,Clinical,OncoSG,0.5238659444820583
+100,25,Clinical,NCI_SherlockLung,0.6242103117994702
+100,25,Clinical + mechanistic,OncoSG,0.5362220717670955
+100,25,Clinical + mechanistic,NCI_SherlockLung,0.6478500101895251
+100,25,Mechanistic only,OncoSG,0.5335420898217107
+100,25,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,26,Clinical,OncoSG,0.6570187316632814
+100,26,Clinical,NCI_SherlockLung,0.6610963929080905
+100,26,Clinical + mechanistic,OncoSG,0.6660460392687881
+100,26,Clinical + mechanistic,NCI_SherlockLung,0.6610963929080905
+100,26,Mechanistic only,OncoSG,0.6897709320695102
+100,26,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,27,Clinical,OncoSG,0.6742270367862785
+100,27,Clinical,NCI_SherlockLung,0.6127980436111677
+100,27,Clinical + mechanistic,OncoSG,0.6760324983073798
+100,27,Clinical + mechanistic,NCI_SherlockLung,0.6156511106582433
+100,27,Mechanistic only,OncoSG,0.6897709320695102
+100,27,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+100,28,Clinical,OncoSG,0.6381742270367863
+100,28,Clinical,NCI_SherlockLung,0.5956796413287141
+100,28,Clinical + mechanistic,OncoSG,0.6368765515684947
+100,28,Clinical + mechanistic,NCI_SherlockLung,0.5877318116975749
+100,28,Mechanistic only,OncoSG,0.6504457233130219
+100,28,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+100,29,Clinical,OncoSG,0.713834348905439
+100,29,Clinical,NCI_SherlockLung,0.6015895659262278
+100,29,Clinical + mechanistic,OncoSG,0.7147370796659896
+100,29,Clinical + mechanistic,NCI_SherlockLung,0.6062767475035663
+100,29,Mechanistic only,OncoSG,0.6504457233130219
+100,29,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+200,0,Clinical,OncoSG,0.5735725569848793
+200,0,Clinical,NCI_SherlockLung,0.6759730996535561
+200,0,Clinical + mechanistic,OncoSG,0.6011058451816745
+200,0,Clinical + mechanistic,NCI_SherlockLung,0.6782147951905442
+200,0,Mechanistic only,OncoSG,0.6227995937711578
+200,0,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,1,Clinical,OncoSG,0.6763710223425863
+200,1,Clinical,NCI_SherlockLung,0.6282861218667211
+200,1,Clinical + mechanistic,OncoSG,0.6680771834800271
+200,1,Clinical + mechanistic,NCI_SherlockLung,0.6417362950886488
+200,1,Mechanistic only,OncoSG,0.6897709320695102
+200,1,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,2,Clinical,OncoSG,0.6509817197020988
+200,2,Clinical,NCI_SherlockLung,0.6545750968004891
+200,2,Clinical + mechanistic,OncoSG,0.6538027533288197
+200,2,Clinical + mechanistic,NCI_SherlockLung,0.6572243733442021
+200,2,Mechanistic only,OncoSG,0.6897709320695102
+200,2,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,3,Clinical,OncoSG,0.7183480027081923
+200,3,Clinical,NCI_SherlockLung,0.6704707560627675
+200,3,Clinical + mechanistic,OncoSG,0.7183480027081923
+200,3,Clinical + mechanistic,NCI_SherlockLung,0.6708783370694925
+200,3,Mechanistic only,OncoSG,0.6897709320695102
+200,3,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,4,Clinical,OncoSG,0.666440983976529
+200,4,Clinical,NCI_SherlockLung,0.6203382922355818
+200,4,Clinical + mechanistic,OncoSG,0.6683028661701648
+200,4,Clinical + mechanistic,NCI_SherlockLung,0.6250254738129203
+200,4,Mechanistic only,OncoSG,0.6897709320695102
+200,4,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,5,Clinical,OncoSG,0.7133265628526292
+200,5,Clinical,NCI_SherlockLung,0.6576319543509273
+200,5,Clinical + mechanistic,OncoSG,0.7150191830286617
+200,5,Clinical + mechanistic,NCI_SherlockLung,0.6602812308946403
+200,5,Mechanistic only,OncoSG,0.6897709320695102
+200,5,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,6,Clinical,OncoSG,0.7155269690814714
+200,6,Clinical,NCI_SherlockLung,0.6702669655594049
+200,6,Clinical + mechanistic,OncoSG,0.7169374858948319
+200,6,Clinical + mechanistic,NCI_SherlockLung,0.6721010800896678
+200,6,Mechanistic only,OncoSG,0.6897709320695102
+200,6,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,7,Clinical,OncoSG,0.6865267433987813
+200,7,Clinical,NCI_SherlockLung,0.5327083757896882
+200,7,Clinical + mechanistic,OncoSG,0.7048070412999323
+200,7,Clinical + mechanistic,NCI_SherlockLung,0.5911962502547381
+200,7,Mechanistic only,OncoSG,0.6897709320695102
+200,7,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,8,Clinical,OncoSG,0.582881967953058
+200,8,Clinical,NCI_SherlockLung,0.6044426329733035
+200,8,Clinical + mechanistic,OncoSG,0.5864928909952607
+200,8,Clinical + mechanistic,NCI_SherlockLung,0.6089260240472794
+200,8,Mechanistic only,OncoSG,0.6227995937711578
+200,8,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,9,Clinical,OncoSG,0.6699390656736628
+200,9,Clinical,NCI_SherlockLung,0.6407173425718361
+200,9,Clinical + mechanistic,OncoSG,0.6795305800045136
+200,9,Clinical + mechanistic,NCI_SherlockLung,0.6588546973711025
+200,9,Mechanistic only,OncoSG,0.6897709320695102
+200,9,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,10,Clinical,OncoSG,0.6963439404197698
+200,10,Clinical,NCI_SherlockLung,0.6490727532097005
+200,10,Clinical + mechanistic,OncoSG,0.6996163394267659
+200,10,Clinical + mechanistic,NCI_SherlockLung,0.6619115549215406
+200,10,Mechanistic only,OncoSG,0.6897709320695102
+200,10,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,11,Clinical,OncoSG,0.7000677048070413
+200,11,Clinical,NCI_SherlockLung,0.6205420827389444
+200,11,Clinical + mechanistic,OncoSG,0.7055969307154141
+200,11,Clinical + mechanistic,NCI_SherlockLung,0.6423476665987365
+200,11,Mechanistic only,OncoSG,0.6504457233130219
+200,11,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+200,12,Clinical,OncoSG,0.7125930941096817
+200,12,Clinical,NCI_SherlockLung,0.6668025270022417
+200,12,Clinical + mechanistic,OncoSG,0.7140600315955766
+200,12,Clinical + mechanistic,NCI_SherlockLung,0.6668025270022417
+200,12,Mechanistic only,OncoSG,0.6897709320695102
+200,12,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,13,Clinical,OncoSG,0.6748476641841571
+200,13,Clinical,NCI_SherlockLung,0.6482575911962503
+200,13,Clinical + mechanistic,OncoSG,0.6737192507334687
+200,13,Clinical + mechanistic,NCI_SherlockLung,0.6482575911962503
+200,13,Mechanistic only,OncoSG,0.6897709320695102
+200,13,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,14,Clinical,OncoSG,0.6381178063642519
+200,14,Clinical,NCI_SherlockLung,0.675565518646831
+200,14,Clinical + mechanistic,OncoSG,0.6396975851952156
+200,14,Clinical + mechanistic,NCI_SherlockLung,0.6763806806602812
+200,14,Mechanistic only,OncoSG,0.6897709320695102
+200,14,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,15,Clinical,OncoSG,0.695554051004288
+200,15,Clinical,NCI_SherlockLung,0.6529447727735888
+200,15,Clinical + mechanistic,OncoSG,0.6936921688106522
+200,15,Clinical + mechanistic,NCI_SherlockLung,0.6525371917668636
+200,15,Mechanistic only,OncoSG,0.6504457233130219
+200,15,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+200,16,Clinical,OncoSG,0.6122771383434891
+200,16,Clinical,NCI_SherlockLung,0.548400244548604
+200,16,Clinical + mechanistic,OncoSG,0.625141051681336
+200,16,Clinical + mechanistic,NCI_SherlockLung,0.569390666394946
+200,16,Mechanistic only,OncoSG,0.6897709320695102
+200,16,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,17,Clinical,OncoSG,0.6505303543218235
+200,17,Clinical,NCI_SherlockLung,0.6782147951905442
+200,17,Clinical + mechanistic,OncoSG,0.6459038591740014
+200,17,Clinical + mechanistic,NCI_SherlockLung,0.6782147951905442
+200,17,Mechanistic only,OncoSG,0.6897709320695102
+200,17,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,18,Clinical,OncoSG,0.6226585420898217
+200,18,Clinical,NCI_SherlockLung,0.6778072141838191
+200,18,Clinical + mechanistic,OncoSG,0.6146468065899345
+200,18,Clinical + mechanistic,NCI_SherlockLung,0.6788261667006318
+200,18,Mechanistic only,OncoSG,0.6227995937711578
+200,18,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,19,Clinical,OncoSG,0.6552696908147145
+200,19,Clinical,NCI_SherlockLung,0.6749541471367434
+200,19,Clinical + mechanistic,OncoSG,0.6540848566914917
+200,19,Clinical + mechanistic,NCI_SherlockLung,0.6753617281434685
+200,19,Mechanistic only,OncoSG,0.6897709320695102
+200,19,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,20,Clinical,OncoSG,0.7178402166553826
+200,20,Clinical,NCI_SherlockLung,0.6557978398206643
+200,20,Clinical + mechanistic,OncoSG,0.7181223200180546
+200,20,Clinical + mechanistic,NCI_SherlockLung,0.656409211330752
+200,20,Mechanistic only,OncoSG,0.6504457233130219
+200,20,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+200,21,Clinical,OncoSG,0.6873166328142631
+200,21,Clinical,NCI_SherlockLung,0.6604850213980028
+200,21,Clinical + mechanistic,OncoSG,0.6805461521101331
+200,21,Clinical + mechanistic,NCI_SherlockLung,0.6604850213980028
+200,21,Mechanistic only,OncoSG,0.6897709320695102
+200,21,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,22,Clinical,OncoSG,0.6834236064093884
+200,22,Clinical,NCI_SherlockLung,0.6515182392500509
+200,22,Clinical + mechanistic,OncoSG,0.6831415030467163
+200,22,Clinical + mechanistic,NCI_SherlockLung,0.6513144487466884
+200,22,Mechanistic only,OncoSG,0.6504457233130219
+200,22,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+200,23,Clinical,OncoSG,0.6636763710223426
+200,23,Clinical,NCI_SherlockLung,0.6769920521703688
+200,23,Clinical + mechanistic,OncoSG,0.663055743624464
+200,23,Clinical + mechanistic,NCI_SherlockLung,0.6761768901569187
+200,23,Mechanistic only,OncoSG,0.6897709320695102
+200,23,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,24,Clinical,OncoSG,0.6927894380501015
+200,24,Clinical,NCI_SherlockLung,0.5989402893825148
+200,24,Clinical + mechanistic,OncoSG,0.6952155269690815
+200,24,Clinical + mechanistic,NCI_SherlockLung,0.6138169961279805
+200,24,Mechanistic only,OncoSG,0.6504457233130219
+200,24,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+200,25,Clinical,OncoSG,0.7079101782893252
+200,25,Clinical,NCI_SherlockLung,0.6472386386794375
+200,25,Clinical + mechanistic,OncoSG,0.7096027984653577
+200,25,Clinical + mechanistic,NCI_SherlockLung,0.6502954962298757
+200,25,Mechanistic only,OncoSG,0.6897709320695102
+200,25,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,26,Clinical,OncoSG,0.6324757391108102
+200,26,Clinical,NCI_SherlockLung,0.5905848787446505
+200,26,Clinical + mechanistic,OncoSG,0.6479914240577748
+200,26,Clinical + mechanistic,NCI_SherlockLung,0.6079070715304666
+200,26,Mechanistic only,OncoSG,0.6504457233130219
+200,26,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+200,27,Clinical,OncoSG,0.6242383209207854
+200,27,Clinical,NCI_SherlockLung,0.6623191359282657
+200,27,Clinical + mechanistic,OncoSG,0.6188783570300158
+200,27,Clinical + mechanistic,NCI_SherlockLung,0.6633380884450785
+200,27,Mechanistic only,OncoSG,0.6227995937711578
+200,27,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,28,Clinical,OncoSG,0.7069510268562401
+200,28,Clinical,NCI_SherlockLung,0.6301202363969839
+200,28,Clinical + mechanistic,OncoSG,0.7078537576167908
+200,28,Clinical + mechanistic,NCI_SherlockLung,0.6458121051558997
+200,28,Mechanistic only,OncoSG,0.6897709320695102
+200,28,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+200,29,Clinical,OncoSG,0.6441548183254344
+200,29,Clinical,NCI_SherlockLung,0.6411249235785612
+200,29,Clinical + mechanistic,OncoSG,0.6623222748815166
+200,29,Clinical + mechanistic,NCI_SherlockLung,0.6415325045852863
+200,29,Mechanistic only,OncoSG,0.6504457233130219
+200,29,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,0,Clinical,OncoSG,0.7102234258632363
+400,0,Clinical,NCI_SherlockLung,0.6445893621357245
+400,0,Clinical + mechanistic,OncoSG,0.7122545700744752
+400,0,Clinical + mechanistic,NCI_SherlockLung,0.6517220297534135
+400,0,Mechanistic only,OncoSG,0.6897709320695102
+400,0,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,1,Clinical,OncoSG,0.6721394719025051
+400,1,Clinical,NCI_SherlockLung,0.6723048705930303
+400,1,Clinical + mechanistic,OncoSG,0.6693184382757843
+400,1,Clinical + mechanistic,NCI_SherlockLung,0.6735276136132057
+400,1,Mechanistic only,OncoSG,0.6897709320695102
+400,1,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,2,Clinical,OncoSG,0.7163168584969533
+400,2,Clinical,NCI_SherlockLung,0.6452007336458121
+400,2,Clinical + mechanistic,OncoSG,0.7165989618596253
+400,2,Clinical + mechanistic,NCI_SherlockLung,0.6582433258610149
+400,2,Mechanistic only,OncoSG,0.6504457233130219
+400,2,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,3,Clinical,OncoSG,0.6922252313247574
+400,3,Clinical,NCI_SherlockLung,0.6698593845526798
+400,3,Clinical + mechanistic,OncoSG,0.694877002933875
+400,3,Clinical + mechanistic,NCI_SherlockLung,0.67067454656613
+400,3,Mechanistic only,OncoSG,0.6504457233130219
+400,3,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,4,Clinical,OncoSG,0.7082487023245317
+400,4,Clinical,NCI_SherlockLung,0.6784185856939067
+400,4,Clinical + mechanistic,OncoSG,0.7072895508914466
+400,4,Clinical + mechanistic,NCI_SherlockLung,0.680048909720807
+400,4,Mechanistic only,OncoSG,0.6897709320695102
+400,4,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,5,Clinical,OncoSG,0.6947077409162717
+400,5,Clinical,NCI_SherlockLung,0.6077032810271041
+400,5,Clinical + mechanistic,OncoSG,0.6979237192507335
+400,5,Clinical + mechanistic,NCI_SherlockLung,0.6195231302221317
+400,5,Mechanistic only,OncoSG,0.6504457233130219
+400,5,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,6,Clinical,OncoSG,0.6796434213495824
+400,6,Clinical,NCI_SherlockLung,0.6439779906256369
+400,6,Clinical + mechanistic,OncoSG,0.6891785150078988
+400,6,Clinical + mechanistic,NCI_SherlockLung,0.6584471163643775
+400,6,Mechanistic only,OncoSG,0.6504457233130219
+400,6,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,7,Clinical,OncoSG,0.718855788761002
+400,7,Clinical,NCI_SherlockLung,0.6584471163643775
+400,7,Clinical + mechanistic,OncoSG,0.7192507334687429
+400,7,Clinical + mechanistic,NCI_SherlockLung,0.661300183411453
+400,7,Mechanistic only,OncoSG,0.6504457233130219
+400,7,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,8,Clinical,OncoSG,0.6626043782441887
+400,8,Clinical,NCI_SherlockLung,0.6767882616670063
+400,8,Clinical + mechanistic,OncoSG,0.6618144888287069
+400,8,Clinical + mechanistic,NCI_SherlockLung,0.6765844711636437
+400,8,Mechanistic only,OncoSG,0.6897709320695102
+400,8,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,9,Clinical,OncoSG,0.6978108779056647
+400,9,Clinical,NCI_SherlockLung,0.6356225799877726
+400,9,Clinical + mechanistic,OncoSG,0.6928458587226359
+400,9,Clinical + mechanistic,NCI_SherlockLung,0.6437742001222743
+400,9,Mechanistic only,OncoSG,0.6897709320695102
+400,9,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,10,Clinical,OncoSG,0.7004062288422478
+400,10,Clinical,NCI_SherlockLung,0.6466272671693499
+400,10,Clinical + mechanistic,OncoSG,0.7101105845181674
+400,10,Clinical + mechanistic,NCI_SherlockLung,0.6580395353576524
+400,10,Mechanistic only,OncoSG,0.6897709320695102
+400,10,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,11,Clinical,OncoSG,0.6699954863461972
+400,11,Clinical,NCI_SherlockLung,0.6570205828408396
+400,11,Clinical + mechanistic,OncoSG,0.6703340103814037
+400,11,Clinical + mechanistic,NCI_SherlockLung,0.6566130018341145
+400,11,Mechanistic only,OncoSG,0.6897709320695102
+400,11,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,12,Clinical,OncoSG,0.7086436470322727
+400,12,Clinical,NCI_SherlockLung,0.6464234766659873
+400,12,Clinical + mechanistic,OncoSG,0.7094335364477544
+400,12,Clinical + mechanistic,NCI_SherlockLung,0.6484613816996128
+400,12,Mechanistic only,OncoSG,0.6504457233130219
+400,12,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,13,Clinical,OncoSG,0.6913789212367412
+400,13,Clinical,NCI_SherlockLung,0.6474424291828
+400,13,Clinical + mechanistic,OncoSG,0.6930151207402392
+400,13,Clinical + mechanistic,NCI_SherlockLung,0.6496841247197881
+400,13,Mechanistic only,OncoSG,0.6504457233130219
+400,13,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,14,Clinical,OncoSG,0.6367637102234258
+400,14,Clinical,NCI_SherlockLung,0.6767882616670063
+400,14,Clinical + mechanistic,OncoSG,0.635691717445272
+400,14,Clinical + mechanistic,NCI_SherlockLung,0.6782147951905442
+400,14,Mechanistic only,OncoSG,0.6897709320695102
+400,14,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,15,Clinical,OncoSG,0.679022793951704
+400,15,Clinical,NCI_SherlockLung,0.6454045241491746
+400,15,Clinical + mechanistic,OncoSG,0.6818438275784248
+400,15,Clinical + mechanistic,NCI_SherlockLung,0.6525371917668636
+400,15,Mechanistic only,OncoSG,0.6897709320695102
+400,15,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,16,Clinical,OncoSG,0.7207740916271722
+400,16,Clinical,NCI_SherlockLung,0.6651722029753413
+400,16,Clinical + mechanistic,OncoSG,0.7201534642292936
+400,16,Clinical + mechanistic,NCI_SherlockLung,0.6678214795190545
+400,16,Mechanistic only,OncoSG,0.6504457233130219
+400,16,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,17,Clinical,OncoSG,0.7149627623561273
+400,17,Clinical,NCI_SherlockLung,0.651925820256776
+400,17,Clinical + mechanistic,OncoSG,0.7146806589934552
+400,17,Clinical + mechanistic,NCI_SherlockLung,0.6527409822702263
+400,17,Mechanistic only,OncoSG,0.6897709320695102
+400,17,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,18,Clinical,OncoSG,0.6912096592191379
+400,18,Clinical,NCI_SherlockLung,0.661300183411453
+400,18,Clinical + mechanistic,OncoSG,0.6984315053035433
+400,18,Clinical + mechanistic,NCI_SherlockLung,0.6576319543509273
+400,18,Mechanistic only,OncoSG,0.6504457233130219
+400,18,Mechanistic only,NCI_SherlockLung,0.6478500101895251
+400,19,Clinical,OncoSG,0.710731211916046
+400,19,Clinical,NCI_SherlockLung,0.6293050743835338
+400,19,Clinical + mechanistic,OncoSG,0.7116903633491312
+400,19,Clinical + mechanistic,NCI_SherlockLung,0.6486651722029754
+400,19,Mechanistic only,OncoSG,0.6897709320695102
+400,19,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,20,Clinical,OncoSG,0.7058790340780862
+400,20,Clinical,NCI_SherlockLung,0.677399633177094
+400,20,Clinical + mechanistic,OncoSG,0.7021552696908148
+400,20,Clinical + mechanistic,NCI_SherlockLung,0.6778072141838191
+400,20,Mechanistic only,OncoSG,0.6897709320695102
+400,20,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,21,Clinical,OncoSG,0.6789099526066351
+400,21,Clinical,NCI_SherlockLung,0.6429590381088242
+400,21,Clinical + mechanistic,OncoSG,0.6808282554728052
+400,21,Clinical + mechanistic,NCI_SherlockLung,0.6478500101895251
+400,21,Mechanistic only,OncoSG,0.6227995937711578
+400,21,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,22,Clinical,OncoSG,0.7079101782893252
+400,22,Clinical,NCI_SherlockLung,0.6246178928061953
+400,22,Clinical + mechanistic,OncoSG,0.7120853080568721
+400,22,Clinical + mechanistic,NCI_SherlockLung,0.6346036274709599
+400,22,Mechanistic only,OncoSG,0.6897709320695102
+400,22,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,23,Clinical,OncoSG,0.719532836831415
+400,23,Clinical,NCI_SherlockLung,0.6782147951905442
+400,23,Clinical + mechanistic,OncoSG,0.7193635748138117
+400,23,Clinical + mechanistic,NCI_SherlockLung,0.6784185856939067
+400,23,Mechanistic only,OncoSG,0.6897709320695102
+400,23,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,24,Clinical,OncoSG,0.69583615436696
+400,24,Clinical,NCI_SherlockLung,0.6796413287140819
+400,24,Clinical + mechanistic,OncoSG,0.6940871135183931
+400,24,Clinical + mechanistic,NCI_SherlockLung,0.6798451192174445
+400,24,Mechanistic only,OncoSG,0.6897709320695102
+400,24,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,25,Clinical,OncoSG,0.7177837959828481
+400,25,Clinical,NCI_SherlockLung,0.666191155492154
+400,25,Clinical + mechanistic,OncoSG,0.7182915820356579
+400,25,Clinical + mechanistic,NCI_SherlockLung,0.6665987364988791
+400,25,Mechanistic only,OncoSG,0.6897709320695102
+400,25,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,26,Clinical,OncoSG,0.6804897314375987
+400,26,Clinical,NCI_SherlockLung,0.6509068677399633
+400,26,Clinical + mechanistic,OncoSG,0.6816745655608215
+400,26,Clinical + mechanistic,NCI_SherlockLung,0.6543713062971266
+400,26,Mechanistic only,OncoSG,0.6897709320695102
+400,26,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,27,Clinical,OncoSG,0.7168810652222974
+400,27,Clinical,NCI_SherlockLung,0.6663949459955166
+400,27,Clinical + mechanistic,OncoSG,0.716824644549763
+400,27,Clinical + mechanistic,NCI_SherlockLung,0.6663949459955166
+400,27,Mechanistic only,OncoSG,0.6897709320695102
+400,27,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,28,Clinical,OncoSG,0.7146806589934552
+400,28,Clinical,NCI_SherlockLung,0.6741389851232933
+400,28,Clinical + mechanistic,OncoSG,0.7150191830286617
+400,28,Clinical + mechanistic,NCI_SherlockLung,0.6743427756266558
+400,28,Mechanistic only,OncoSG,0.6897709320695102
+400,28,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+400,29,Clinical,OncoSG,0.7020988490182803
+400,29,Clinical,NCI_SherlockLung,0.6229875687792948
+400,29,Clinical + mechanistic,OncoSG,0.7027758970886933
+400,29,Clinical + mechanistic,NCI_SherlockLung,0.6282861218667211
+400,29,Mechanistic only,OncoSG,0.6897709320695102
+400,29,Mechanistic only,NCI_SherlockLung,0.6553902588139393
+945,0,Clinical,OncoSG,0.7096592191378921
+945,0,Clinical,NCI_SherlockLung,0.6617077644181781
+945,0,Clinical + mechanistic,OncoSG,0.7101105845181674
+945,0,Clinical + mechanistic,NCI_SherlockLung,0.663134297941716
+945,0,Mechanistic only,OncoSG,0.6897709320695102
+945,0,Mechanistic only,NCI_SherlockLung,0.6553902588139393

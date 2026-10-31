@@ -1,0 +1,7 @@
+stage,histology,n,events,KM_DFS_24,twin_RFS_24,KM_DFS_60,twin_RFS_60
+1,Adenocarcinoma,238,82,0.7002,0.865,0.4636,0.535
+1,Squamous,169,47,0.7933,0.7875,0.5678,0.38
+2,Adenocarcinoma,98,52,0.4407,0.64,0.2784,0.3125
+2,Squamous,116,41,0.6322,0.5425,0.4944,0.2175
+3,Adenocarcinoma,55,27,0.502,0.65,0.3707,0.3125
+3,Squamous,62,32,0.526,0.545,0.3747,0.2175

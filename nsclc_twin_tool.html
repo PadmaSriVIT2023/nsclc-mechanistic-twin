@@ -1,0 +1,148 @@
+<title>NSCLC Twin Risk Explorer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<style>
+/* Layout: two-column instrument panel (inputs left, read-outs right), stacks to one column on phones */
+:root{
+  --bg:#f5f7f6; --panel:#ffffff; --ink:#18231f; --muted:#5b6b65; --line:#d8e0dc;
+  --accent:#0f6b5c; --accent-soft:#e1f0ec; --twin:#8a5a00; --twin-soft:#f6ecd9; --warn:#9a3412; --warn-soft:#fdeee6;
+  --display:"Source Serif 4", Georgia, serif; --body:"IBM Plex Sans", system-ui, sans-serif; --mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1513; --panel:#16201d; --ink:#e4ece8; --muted:#97a8a1; --line:#2a3833;
+  --accent:#4fbfa9; --accent-soft:#16352f; --twin:#e0a84a; --twin-soft:#3a2c12; --warn:#f2a07b; --warn-soft:#3b2116; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1513; --panel:#16201d; --ink:#e4ece8; --muted:#97a8a1; --line:#2a3833;
+  --accent:#4fbfa9; --accent-soft:#16352f; --twin:#e0a84a; --twin-soft:#3a2c12; --warn:#f2a07b; --warn-soft:#3b2116; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header h1{font-family:var(--display);font-size:clamp(26px,4vw,34px);line-height:1.15;margin:0 0 6px;text-wrap:balance}
+header p{margin:0;color:var(--muted);max-width:68ch}
+.banner{margin:18px 0 22px;padding:10px 14px;border:1px solid var(--warn);background:var(--warn-soft);color:var(--warn);border-radius:6px;font-size:13.5px}
+.grid{display:grid;grid-template-columns:minmax(0,330px) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:820px){.grid{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px;min-width:0}
+.panel h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:600}
+label{display:block;font-weight:500;font-size:14px;margin-bottom:6px}
+.field{display:grid;gap:4px;margin-bottom:16px}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.val{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:inherit;font-size:13.5px;padding:6px 11px;border-radius:5px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.seg button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+select{font:inherit;font-size:14px;padding:7px 9px;border-radius:5px;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:100%}
+.readouts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}
+@media (max-width:560px){.readouts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ro{border:1px solid var(--line);border-radius:6px;padding:10px 12px}
+.ro .k{font-size:12px;color:var(--muted)}
+.ro .v{font-family:var(--mono);font-size:22px;font-variant-numeric:tabular-nums}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12.5px;font-weight:600}
+.pill.low{background:var(--accent-soft);color:var(--accent)} .pill.int{background:var(--twin-soft);color:var(--twin)} .pill.high{background:var(--warn-soft);color:var(--warn)}
+.charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+@media (max-width:700px){.charts{grid-template-columns:minmax(0,1fr)}}
+.chart h3{font-size:14px;margin:0 0 4px;font-weight:600} .chart p{font-size:12.5px;color:var(--muted);margin:0 0 6px}
+svg{width:100%;height:auto;display:block}
+.axis{stroke:var(--line)} .tick{fill:var(--muted);font-family:var(--mono);font-size:10px}
+details{margin-top:18px} summary{cursor:pointer;font-weight:600}
+.note{font-size:13px;color:var(--muted);max-width:75ch}
+table{border-collapse:collapse;font-size:13px;width:100%} td,th{border-bottom:1px solid var(--line);padding:5px 6px;text-align:left} th{color:var(--muted);font-weight:500}
+.tw{overflow-x:auto}
+code{font-family:var(--mono);font-size:12.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>NSCLC Twin Risk Explorer</h1>
+  <p>Overall-survival estimates from the frozen clinical + mechanistic-twin Cox model developed on TCGA lung cancer (n = 945, 337 deaths). Change the five inputs and the curves update.</p>
+</header>
+<div class="banner"><strong>Research use only.</strong> Not a medical device and not for individual treatment decisions. Absolute risks were overestimated in external cohorts until the baseline hazard was re-estimated locally.</div>
+
+<div class="grid">
+  <section class="panel" aria-label="Patient inputs">
+    <h2>Inputs</h2>
+    <div class="field"><label for="age">Age at diagnosis</label><input id="age" type="range" min="35" max="90" value="66"><span class="val" id="ageV"></span></div>
+    <div class="field"><label>Sex</label><div class="seg" data-k="female"><button data-v="0">Male</button><button data-v="1">Female</button></div></div>
+    <div class="field"><label>AJCC stage group</label><div class="seg" data-k="stage"><button data-v="1">I</button><button data-v="2">II</button><button data-v="3">III</button><button data-v="4">IV</button></div></div>
+    <div class="field"><label>Smoking history</label><div class="seg" data-k="smoker"><button data-v="1">Ever</button><button data-v="0">Never</button></div></div>
+    <div class="field"><label>Histology</label><div class="seg" data-k="squam"><button data-v="0">Adenocarcinoma</button><button data-v="1">Squamous</button></div></div>
+    <div class="field"><label for="base">Baseline hazard</label>
+      <select id="base"><option value="tcga">TCGA, as developed</option><option value="OncoSG">Re-estimated: OncoSG (Singapore LUAD)</option><option value="NCI Sherlock-Lung">Re-estimated: Sherlock-Lung (never-smokers)</option></select>
+      <span class="val">Choose the cohort closest to your population.</span></div>
+  </section>
+
+  <section class="panel" aria-label="Model output">
+    <h2>Read-out</h2>
+    <div class="readouts">
+      <div class="ro"><div class="k">1-year OS</div><div class="v" id="s12">–</div></div>
+      <div class="ro"><div class="k">3-year OS</div><div class="v" id="s36">–</div></div>
+      <div class="ro"><div class="k">5-year OS</div><div class="v" id="s60">–</div></div>
+      <div class="ro"><div class="k">Risk group (TCGA tertiles)</div><div class="v" style="font-size:16px;padding-top:4px"><span id="grp" class="pill">–</span></div></div>
+    </div>
+    <div class="charts">
+      <div class="chart"><h3>Predicted overall survival</h3><p>Months from diagnosis, 0–60</p><svg id="osChart" viewBox="0 0 320 210" role="img" aria-label="Overall survival curve"></svg></div>
+      <div class="chart"><h3>Twin relapse-free probability</h3><p>Mechanistic in-silico model, 0–120 months after resection</p><svg id="twChart" viewBox="0 0 320 210" role="img" aria-label="Twin relapse-free curve"></svg></div>
+    </div>
+    <p class="note" id="twinNote"></p>
+  </section>
+</div>
+
+<details>
+  <summary>Model card</summary>
+  <div class="note" style="margin-top:10px">
+    <p><strong>Intended use.</strong> Research and education on mechanistic–ML survival modelling in resected NSCLC. Not validated prospectively.</p>
+    <p><strong>Training data.</strong> TCGA LUAD + LUSC, complete cases, overall survival censored at 60 months. Twin parameters from a CT volume-doubling-time meta-analysis (adenocarcinoma 223 d, squamous 140 d) and TRACERx measured volumes; seeding parameters calibrated on TRACERx recurrence only.</p>
+    <p><strong>External performance (Harrell's C).</strong> OncoSG 0.707 (95% CI 0.649–0.763); NCI Sherlock-Lung 0.663 (95% CI 0.588–0.749). Twin features did not add discrimination over clinical variables.</p>
+    <p><strong>Known limitations.</strong> Squamous histology not externally validated; stage II and III have nearly identical twin inputs; treatment not modelled; OS includes non-cancer deaths.</p>
+    <div class="tw"><table><thead><tr><th>Feature</th><th>Mean</th><th>SD</th><th>β per SD</th></tr></thead><tbody id="coefT"></tbody></table></div>
+  </div>
+</details>
+</div>
+
+<script>
+const MODEL = {"features":["age","female","stage_II","stage_III","stage_IV","ever_smoker","squamous","mech_P60","mech_logTstar"],"mean":[66.34074074074074,0.40634920634920635,0.2761904761904762,0.16296296296296298,0.033862433862433865,0.9068783068783068,0.4973544973544973,0.6423571428571427,3.663308045032745],"scale":[9.349435174150456,0.4911512280841579,0.447112175021162,0.3693318774020122,0.18087501053309202,0.29060289639272757,0.4999930012667704,0.1352786394064762,0.7457354663614608],"coef":[0.12111784915554807,-0.0663764376479471,0.2385154241040373,0.3120631429894806,1.626505743725462,-0.0444623965603991,0.07091440096765166,0.8840524975106737,2.0105614620039454],"baseline_survival_months":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,56.0,57.0,58.0,59.0,60.0],"baseline_survival":[0.9990291546406087,0.9843498281308951,0.9763437969940674,0.9681522798763987,0.9578177383913213,0.9472566592731306,0.933331309081925,0.9224647693847488,0.9169636680565536,0.906938502027352,0.8968045122842089,0.8854653950565303,0.8671575920742557,0.8566810871921806,0.8460272184842953,0.8275680958938152,0.8174635220500246,0.8070828528558078,0.8004393731746655,0.7882513152293915,0.7755039541183568,0.7665805513121292,0.7587276108893207,0.7473824474469845,0.7374246643070895,0.7288123420010629,0.7252355810971123,0.7159763877545028,0.7064712604901274,0.6946383243982692,0.6865772100206115,0.6718485177910993,0.650056343196289,0.6343805282026582,0.6298227081583312,0.6180947891002115,0.6083986394596742,0.6009222046107707,0.5879545032501043,0.5800137484323946,0.5636034968484533,0.5607933317280696,0.5521522056477998,0.54622427570996,0.5370293744528855,0.5277717185496009,0.524632835857175,0.5151220279167343,0.511889054143776,0.5086647312002046,0.4986284522365801,0.4917007886549969,0.4917007886549969,0.4882049008568937,0.47752728956787044,0.4666656583119643,0.45935743963207565,0.45187595566506233,0.4480791350206574,0.4403814376090455,0.4364700384148374],"twin":{"1_0":{"P60":0.465,"logTstar":4.174387269895637,"relapse_free_curve":[0.975,0.975,0.9725,0.9725,0.96,0.9525,0.94,0.9275,0.91,0.9025,0.8925,0.8825,0.865,0.8375,0.8225,0.82,0.7875,0.77,0.7525,0.7375,0.715,0.7025,0.685,0.665,0.64,0.625,0.615,0.5975,0.5825,0.5525,0.535,0.5225,0.4975,0.4825,0.475,0.4675,0.46,0.44,0.4225,0.4025,0.385,0.37,0.36,0.35,0.345,0.33,0.3225,0.31,0.305,0.3025,0.295,0.29,0.2875,0.2875,0.285,0.275,0.2675,0.2625,0.2625,0.26,0.2575]},"1_1":{"P60":0.62,"logTstar":3.8394523125933104,"relapse_free_curve":[0.985,0.9775,0.975,0.9725,0.9525,0.9375,0.915,0.9025,0.8875,0.855,0.8275,0.805,0.7875,0.745,0.7225,0.6975,0.6625,0.64,0.62,0.575,0.555,0.5375,0.5075,0.4875,0.45,0.4375,0.4225,0.4175,0.4075,0.39,0.38,0.36,0.3525,0.3425,0.3325,0.325,0.31,0.3025,0.3025,0.295,0.295,0.29,0.285,0.2825,0.28,0.275,0.2725,0.2725,0.2725,0.2725,0.2725,0.2725,0.27,0.265,0.265,0.265,0.265,0.2625,0.26,0.26,0.26]},"2_0":{"P60":0.6875,"logTstar":3.7013019741124933,"relapse_free_curve":[0.8475,0.8475,0.83,0.8225,0.805,0.78,0.765,0.7475,0.735,0.7175,0.7,0.67,0.64,0.62,0.6,0.58,0.5625,0.54,0.5275,0.51,0.4925,0.47,0.445,0.425,0.415,0.4,0.3775,0.3575,0.335,0.3175,0.3125,0.3075,0.3,0.295,0.285,0.275,0.2675,0.26,0.2575,0.245,0.2275,0.2175,0.21,0.2,0.19,0.19,0.185,0.1825,0.18,0.1725,0.17,0.165,0.155,0.155,0.1525,0.1525,0.1475,0.1475,0.145,0.14,0.14]},"2_1":{"P60":0.7825,"logTstar":3.367295829986474,"relapse_free_curve":[0.8825,0.86,0.8375,0.825,0.795,0.7725,0.745,0.7075,0.67,0.64,0.605,0.575,0.5425,0.525,0.495,0.45,0.4275,0.415,0.3975,0.3825,0.355,0.33,0.31,0.2975,0.28,0.2675,0.2575,0.2425,0.2325,0.22,0.2175,0.205,0.1975,0.195,0.1925,0.19,0.18,0.18,0.1725,0.17,0.17,0.17,0.1675,0.1675,0.1675,0.1675,0.1625,0.1625,0.16,0.16,0.16,0.16,0.16,0.16,0.155,0.155,0.155,0.155,0.155,0.155,0.155]},"3_0":{"P60":0.6875,"logTstar":3.7256934272366524,"relapse_free_curve":[0.8525,0.8475,0.835,0.825,0.805,0.7875,0.7675,0.7525,0.735,0.7175,0.7025,0.685,0.65,0.6225,0.6025,0.585,0.5625,0.55,0.5325,0.515,0.5,0.4775,0.4525,0.4325,0.4175,0.405,0.385,0.365,0.3375,0.3175,0.3125,0.3075,0.3025,0.295,0.285,0.275,0.2675,0.2625,0.2575,0.2525,0.235,0.225,0.2175,0.2075,0.1975,0.195,0.19,0.1875,0.185,0.1775,0.175,0.17,0.16,0.16,0.16,0.1575,0.155,0.155,0.15,0.145,0.145]},"3_1":{"P60":0.7825,"logTstar":3.367295829986474,"relapse_free_curve":[0.8825,0.865,0.8375,0.825,0.795,0.775,0.75,0.71,0.675,0.6475,0.6075,0.5775,0.545,0.53,0.4975,0.4575,0.4375,0.4175,0.4,0.3825,0.36,0.3325,0.3125,0.2975,0.2825,0.2675,0.2575,0.2475,0.2325,0.2225,0.2175,0.205,0.1975,0.195,0.195,0.19,0.185,0.1825,0.1775,0.17,0.17,0.17,0.1675,0.1675,0.1675,0.1675,0.1625,0.1625,0.16,0.16,0.16,0.16,0.16,0.16,0.155,0.155,0.155,0.155,0.155,0.155,0.155]},"4_0":{"P60":1.0,"logTstar":0.0,"relapse_free_curve":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]},"4_1":{"P60":1.0,"logTstar":0.0,"relapse_free_curve":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]}},"risk_cutpoints":[-0.21470210834621306,0.21080072508463343],"alpha":{"coxphsurvivalanalysis__alpha":0.1},"training":{"cohort":"TCGA LUAD+LUSC","n":945,"events":337},"check":{"lp":0.8786433198481881,"S36_tool":0.30227684450857356,"S36_sksurv":0.30227684450857356},"baselines_recalibrated":{"OncoSG":[1.0,0.9947278630375018,0.9894067709438062,0.9894067709438062,0.9867355499210343,0.9840568273135051,0.9623587071652608,0.9595889833967196,0.95676268852441,0.95676268852441,0.9480998668042158,0.9480998668042158,0.9423011493181064,0.9364303061369379,0.933419033186892,0.9303967868284706,0.9273451471806287,0.9209782481412937,0.9144905134810314,0.9112100450678772,0.9046290848626278,0.9012820334080864,0.8944017694122028,0.8839125899833151,0.8732935213370433,0.8696594331202762,0.858614290313632,0.8511389114495886,0.8356520665413248,0.8276393619439814,0.8235502479506339,0.8151387470343765,0.8064631074268633,0.8064631074268633,0.8020698435856081,0.7930705808824233,0.7746615119369861,0.7652755249916777,0.7652755249916777,0.7604418520800204,0.7604418520800204,0.7503726247838381,0.7452746391753525,0.7452746391753525,0.7401273355733455,0.7349402109784352,0.7349402109784352,0.7297457490866239,0.7187442182510603,0.7075959953603266,0.7018744575312624,0.6959956646972238,0.6959956646972238,0.6959956646972238,0.683008066505018,0.6762300234255012,0.6694696091714212,0.6694696091714212,0.6623987100232642,0.6549957860688341,0.6471561528320431],"NCI Sherlock-Lung":[1.0,0.9948013530962025,0.9948013530962025,0.9948013530962025,0.9948013530962025,0.989433338565197,0.989433338565197,0.989433338565197,0.983855708381255,0.983855708381255,0.983855708381255,0.9782337987470949,0.9782337987470949,0.9724905354915638,0.9608388674303785,0.9548557787693365,0.9548557787693365,0.9487863579722047,0.9427274106169454,0.9305885569453517,0.9122677315859843,0.9122677315859843,0.9122677315859843,0.9060688982480696,0.899883273473412,0.8936636156960198,0.8936636156960198,0.8807931353088058,0.8742004106474078,0.8610403307203847,0.8542606855953688,0.8542606855953688,0.8474498929622238,0.8404819051871247,0.8334282614641471,0.8334282614641471,0.8262087153960703,0.8117050493885861,0.8117050493885861,0.8041519717590794,0.7965684307022787,0.7813692584092173,0.7736415831119042,0.7736415831119042,0.7656939752682755,0.7574552726536004,0.7574552726536004,0.7574552726536004,0.7574552726536004,0.7487758355206054,0.7487758355206054,0.7487758355206054,0.7487758355206054,0.7487758355206054,0.7398047760002164,0.7398047760002164,0.7307836661980784,0.7217910332869429,0.7128259701871743,0.7128259701871743,0.7128259701871743]}};
+const st = {female:0, stage:1, smoker:1, squam:0};
+const $ = id => document.getElementById(id);
+function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
+function lp(x){const f=MODEL.features;let s=0;for(let i=0;i<f.length;i++){s+=((x[f[i]]-MODEL.mean[i])/MODEL.scale[i])*MODEL.coef[i]}return s}
+function features(){
+  const tw = MODEL.twin[st.stage+"_"+st.squam];
+  return {age:+$("age").value, female:st.female, stage_II:+(st.stage==2), stage_III:+(st.stage==3), stage_IV:+(st.stage==4),
+          ever_smoker:st.smoker, squamous:st.squam, mech_P60:tw.P60, mech_logTstar:tw.logTstar};
+}
+function draw(svg, xs, ys, xmax, color, ticks){
+  const W=320,H=210,L=34,R=8,T=8,B=26, sx=x=>L+(W-L-R)*x/xmax, sy=y=>T+(H-T-B)*(1-y);
+  let g=`<line class="axis" x1="${L}" y1="${sy(0)}" x2="${W-R}" y2="${sy(0)}"/><line class="axis" x1="${L}" y1="${T}" x2="${L}" y2="${sy(0)}"/>`;
+  for(const y of [0,.25,.5,.75,1]) g+=`<line class="axis" stroke-dasharray="2 3" x1="${L}" x2="${W-R}" y1="${sy(y)}" y2="${sy(y)}" opacity=".6"/><text class="tick" x="${L-5}" y="${sy(y)+3}" text-anchor="end">${y.toFixed(2)}</text>`;
+  for(const t of ticks) g+=`<text class="tick" x="${sx(t)}" y="${H-8}" text-anchor="middle">${t}</text>`;
+  let d="";xs.forEach((x,i)=>{d+=(i?"L":"M")+sx(x).toFixed(1)+","+sy(ys[i]).toFixed(1)});
+  let a=d+`L${sx(xs[xs.length-1])},${sy(0)}L${sx(xs[0])},${sy(0)}Z`;
+  g+=`<path d="${a}" fill="${color}" opacity=".12"/><path d="${d}" fill="none" stroke="${color}" stroke-width="2.2"/>`;
+  const lx=xs[xs.length-1], ly=ys[ys.length-1];
+  g+=`<circle cx="${sx(lx)}" cy="${sy(ly)}" r="3.2" fill="${color}"/>`;
+  svg.innerHTML=g;
+}
+function update(){
+  $("ageV").textContent=$("age").value+" years";
+  document.querySelectorAll(".seg").forEach(s=>s.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", String(+b.dataset.v===st[s.dataset.k]))));
+  const x=features(), l=lp(x), base=$("base").value=="tcga"?MODEL.baseline_survival:MODEL.baselines_recalibrated[$("base").value];
+  const S=base.map(s0=>Math.pow(s0,Math.exp(l)));
+  const pc=v=>(100*v).toFixed(0)+"%";
+  $("s12").textContent=pc(S[12]);$("s36").textContent=pc(S[36]);$("s60").textContent=pc(S[60]);
+  const c=MODEL.risk_cutpoints, g=l<c[0]?["Low","low"]:l<c[1]?["Intermediate","int"]:["High","high"];
+  $("grp").textContent=g[0];$("grp").className="pill "+g[1];
+  draw($("osChart"),MODEL.baseline_survival_months,S,60,css("--accent"),[0,12,24,36,48,60]);
+  const tw=MODEL.twin[st.stage+"_"+st.squam], tx=tw.relapse_free_curve.map((_,i)=>2*i);
+  draw($("twChart"),tx,tw.relapse_free_curve,120,css("--twin"),[0,24,48,72,96,120]);
+  $("twinNote").textContent = st.stage==4 ? "Stage IV disease is overt at diagnosis, so the twin relapse-free probability is zero by construction."
+    : `Twin: ${(100*tw.P60).toFixed(0)}% probability of detectable metastatic relapse within 60 months after resection (400 Monte Carlo draws). The twin depends only on stage and histology.`;
+}
+document.querySelectorAll(".seg").forEach(s=>s.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;st[s.dataset.k]=+b.dataset.v;update()}));
+$("age").addEventListener("input",update);$("base").addEventListener("change",update);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",update);
+$("coefT").innerHTML=MODEL.features.map((f,i)=>`<tr><td><code>${f}</code></td><td>${MODEL.mean[i].toFixed(3)}</td><td>${MODEL.scale[i].toFixed(3)}</td><td>${MODEL.coef[i].toFixed(3)}</td></tr>`).join("");
+update();
+</script>

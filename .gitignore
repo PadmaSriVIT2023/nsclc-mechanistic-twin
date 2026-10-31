@@ -1,0 +1,9 @@
+results/final_models.joblib
+manuscript/out/*.aux
+manuscript/out/*.log
+manuscript/out/*.bbl
+manuscript/out/*.blg
+manuscript/out/*.out
+manuscript/out/docxcheck/
+manuscript/out/pg-*
+__pycache__/

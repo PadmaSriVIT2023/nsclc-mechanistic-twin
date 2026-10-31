@@ -1,0 +1,32 @@
+{
+  "TCGA": {
+    "luad_tcga_patients": 522,
+    "luad_tcga_excluded_neoadjuvant": 3,
+    "lusc_tcga_patients": 504,
+    "lusc_tcga_excluded_neoadjuvant": 7,
+    "duplicate_patient_ids_removed": 0,
+    "n_before_complete_case": 1016,
+    "after_complete_case": 945,
+    "excluded_missing_or_zero_followup": 71,
+    "events": 337
+  },
+  "OncoSG": {
+    "patients": 305,
+    "after_complete_case": 296,
+    "excluded_missing_or_zero_followup": 9,
+    "events": 88
+  },
+  "NCI_SherlockLung": {
+    "patients": 232,
+    "excluded_carcinoid": 36,
+    "after_complete_case": 169,
+    "excluded_missing_or_zero_followup": 27,
+    "events": 42
+  },
+  "overlap": {
+    "OncoSG&TCGA": 0,
+    "NCI&TCGA": 0,
+    "NCI&OncoSG": 0
+  },
+  "overlap_note": "No shared patient identifiers; Sherlock-Lung tissue source sites (Laval, Nice, EAGLE-NCI, Yale, Moffitt) and OncoSG (Singapore) are not TCGA sites."
+}

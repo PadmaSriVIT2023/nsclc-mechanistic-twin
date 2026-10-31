@@ -1,0 +1,11 @@
+,,harrell_c,harrell_c,uno_c,uno_c,td_auc_36,td_auc_36,ibs,ibs
+,,mean,std,mean,std,mean,std,mean,std
+features,learner,,,,,,,,
+Clinical,CoxPH,0.616,0.032,0.602,0.035,0.638,0.051,0.187,0.01
+Clinical,GBS,0.604,0.036,0.597,0.035,0.633,0.047,0.189,0.012
+Clinical,RSF,0.606,0.027,0.592,0.024,0.638,0.04,0.189,0.008
+Clinical + mechanistic,CoxPH,0.619,0.032,0.6,0.032,0.646,0.056,0.187,0.01
+Clinical + mechanistic,GBS,0.619,0.031,0.604,0.037,0.655,0.061,0.186,0.009
+Clinical + mechanistic,RSF,0.617,0.027,0.596,0.024,0.649,0.053,0.187,0.009
+Mechanistic only,CoxPH,0.611,0.025,0.588,0.028,0.63,0.06,0.188,0.009
+Stage only (TNM),CoxPH,0.605,0.024,0.593,0.027,0.63,0.046,0.187,0.008

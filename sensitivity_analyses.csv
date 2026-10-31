@@ -1,0 +1,37 @@
+analysis,features,cohort,C,IBS
+Primary analysis,Twin only,OncoSG,0.6898,0.1857
+Primary analysis,Twin only,NCI_SherlockLung,0.6554,0.1757
+Primary analysis,Clinical + twin,OncoSG,0.7073,0.208
+Primary analysis,Clinical + twin,NCI_SherlockLung,0.6629,0.2165
+Primary analysis,Clinical,OncoSG,0.7097,0.2047
+Primary analysis,Clinical,NCI_SherlockLung,0.6617,0.2165
+Homogeneous seeding (sigma = 0),Twin only,OncoSG,0.6504,0.1857
+Homogeneous seeding (sigma = 0),Twin only,NCI_SherlockLung,0.6479,0.1744
+Homogeneous seeding (sigma = 0),Clinical + twin,OncoSG,0.7066,0.2085
+Homogeneous seeding (sigma = 0),Clinical + twin,NCI_SherlockLung,0.6635,0.2163
+Homogeneous seeding (sigma = 0),Clinical,OncoSG,0.7097,0.2047
+Homogeneous seeding (sigma = 0),Clinical,NCI_SherlockLung,0.6617,0.2165
+VDT prior x0.7 (no recalibration),Twin only,OncoSG,0.6504,0.1902
+VDT prior x0.7 (no recalibration),Twin only,NCI_SherlockLung,0.6479,0.1801
+VDT prior x0.7 (no recalibration),Clinical + twin,OncoSG,0.7089,0.207
+VDT prior x0.7 (no recalibration),Clinical + twin,NCI_SherlockLung,0.6635,0.2158
+VDT prior x0.7 (no recalibration),Clinical,OncoSG,0.7097,0.2047
+VDT prior x0.7 (no recalibration),Clinical,NCI_SherlockLung,0.6617,0.2165
+VDT prior x1.3 (no recalibration),Twin only,OncoSG,0.6504,0.1847
+VDT prior x1.3 (no recalibration),Twin only,NCI_SherlockLung,0.6479,0.1758
+VDT prior x1.3 (no recalibration),Clinical + twin,OncoSG,0.7101,0.2059
+VDT prior x1.3 (no recalibration),Clinical + twin,NCI_SherlockLung,0.6637,0.2153
+VDT prior x1.3 (no recalibration),Clinical,OncoSG,0.7097,0.2047
+VDT prior x1.3 (no recalibration),Clinical,NCI_SherlockLung,0.6617,0.2165
+36-month horizon,Twin only,OncoSG,0.7098,0.1229
+36-month horizon,Twin only,NCI_SherlockLung,0.6592,0.0998
+36-month horizon,Clinical + twin,OncoSG,0.726,0.1325
+36-month horizon,Clinical + twin,NCI_SherlockLung,0.6575,0.1197
+36-month horizon,Clinical,OncoSG,0.7309,0.1296
+36-month horizon,Clinical,NCI_SherlockLung,0.6572,0.1171
+Stage IV excluded,Twin only,OncoSG,0.6429,0.1904
+Stage IV excluded,Twin only,NCI_SherlockLung,0.6554,0.1825
+Stage IV excluded,Clinical + twin,OncoSG,0.6744,0.2027
+Stage IV excluded,Clinical + twin,NCI_SherlockLung,0.665,0.2136
+Stage IV excluded,Clinical,OncoSG,0.6717,0.1997
+Stage IV excluded,Clinical,NCI_SherlockLung,0.6587,0.2145
